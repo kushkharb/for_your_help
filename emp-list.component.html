@@ -1,0 +1,11 @@
+<hr>
+<button (click)="getEmpList()">get emps</button>
+    <h1>Employee Details Table</h1>
+    <table border="1">
+        <tr *ngFor="let e of empList">
+            <td>{{e.empId}}</td>
+            <td>{{e.name}}</td>  
+            <td>{{e.city}}</td>
+            <td>{{e.salary}}</td>
+        </tr>
+    </table>

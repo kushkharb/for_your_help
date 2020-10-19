@@ -1,0 +1,11 @@
+<h1>Emp Details Page</h1>
+<hr>
+EmpId: <input type="text" value="" #inputText>
+<button (click)="getEmpDetails(inputText.value)">fetch</button>
+<table>
+    <tr> <td>Emp id:</td> <td>{{emp.empId}}</td> </tr>
+    <tr> <td>name:</td> <td>{{emp.name}}</td> </tr>
+    <tr> <td>city:</td> <td>{{emp.city}}</td> </tr>
+    <tr> <td>salary:</td> <td>{{emp.salary}}</td> </tr>
+</table>
+<!-- <h1>{{emp.name}}</h1> -->
